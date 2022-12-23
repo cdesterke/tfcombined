@@ -24,7 +24,7 @@ Starting from an imput human gene list obtained by omics experiments this tfcomb
 
 ```r
 ##define a human gene list
-library(dfcombined)
+library(tfcombined)
 custom<-c("GATA4","GTF2B","JUN","SOX9","SP1","NCOA1","TRERF1","ZNF653","NFYA","PROX1","SOX2","PIAS1","TBX19","SOX8","EDF1","PNRC2","PITX1","NRIP1","CXXC1","CTNNB1","AR")
 ## calculates the family enrichments
 res<-tfcrcalc(custom)
