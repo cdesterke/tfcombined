@@ -87,3 +87,41 @@ tfcrnet(custom,res,layout=layout_as_star,cex=1,distance=1.5)
 > Timothy Ravasi, Harukazu Suzuki, Carlo Vittorio Cannistraci, Shintaro Katayama, Vladimir B Bajic, Kai Tan, Altuna Akalin, Sebastian Schmeier, Mutsumi Kanamori-Katayama, Nicolas Bertin, Piero Carninci, Carsten O Daub, Alistair R R Forrest, Julian Gough, Sean Grimmond, Jung-Hoon Han, Takehiro Hashimoto, Winston Hide, Oliver Hofmann, Atanas Kamburov, Mandeep Kaur, Hideya Kawaji, Atsutaka Kubosaki, Timo Lassmann, Erik van Nimwegen, Cameron Ross MacPherson, Chihiro Ogawa, Aleksandar Radovanovic, Ariel Schwartz, Rohan D Teasdale, Jesper Tegnér, Boris Lenhard, Sarah A Teichmann, Takahiro Arakawa, Noriko Ninomiya, Kayoko Murakami, Michihira Tagami, Shiro Fukuda, Kengo Imamura, Chikatoshi Kai, Ryoko Ishihara, Yayoi Kitazume, Jun Kawai, David A Hume, Trey Ideker, Yoshihide Hayashizaki: Cell
 . 2010 Mar 5;140(5):744-52. doi: 10.1016/j.cell.2010.01.044., An atlas of combinatorial transcriptional regulation in mouse and man (PMID: 20211142)
 
+## complete use case
+
+```r
+library(devtools)
+install_github("cdesterke/tfcombined")
+
+
+library(tfcombined)
+
+#save the imported gene list in a string vector
+vector<-set$gene
+
+#compute the score of enrichment
+res<-tfcrcalc(vector)
+
+#verified if the enriched tf are present in the initial genelist
+library(dplyr)
+df<-res
+df$gene<-row.names(df)
+set%>%inner_join(df,by="gene")->union
+row.names(union)<-union$gene
+
+#plot top 15 TF 
+plotes(union)
+plotnlp(union)
+
+#remove TF with no significance
+union%>%filter(pvalues!=1)->union
+
+#adjust the table for the net
+union$gene<-NULL
+
+#perform the net
+tfcrnet(vector,union,layout=layout_nicely,cex=1,distance=1.5)
+
+```
+
+
