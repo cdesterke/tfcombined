@@ -30,3 +30,25 @@ res<-tfcrcalc(custom)
 head(res,n=15)
 ```
 ![res](https://github.com/cdesterke/tfcombined/blob/main/res.png)
+
+
+```r
+plotes(res)
+
+```
+![es](https://github.com/cdesterke/tfcombined/blob/main/es.png)
+
+
+### barplot of negative log10 p-values
+
+```r
+plotnlp(res)
+
+```
+![nlp](https://github.com/cdesterke/gpcr/blob/tfcombined/nlp.png)
+
+
+## network of enriched
+default parameters
+
+
