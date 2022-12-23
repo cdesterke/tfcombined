@@ -33,6 +33,7 @@ head(res,n=15)
 
 
 ```r
+res<-head(res,n=15)
 plotes(res)
 
 ```
@@ -42,10 +43,11 @@ plotes(res)
 ### barplot of negative log10 p-values
 
 ```r
+res<-head(res,n=15)
 plotnlp(res)
 
 ```
-![nlp](https://github.com/cdesterke/gpcr/blob/tfcombined/nlp.png)
+![nlp](https://github.com/cdesterke/tfcombined/blob/main/nlp.png)
 
 
 ## network of enriched
