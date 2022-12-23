@@ -24,7 +24,7 @@ plotnlp<-function(res){
 
 		## perform the barplot
 		p=ggplot(data=res,aes(x=reorder(family,ES),y=NLP,fill=family))+geom_bar(stat="identity")+
-			ylim(0,max(res$NLP)+1)+
+			ylim(0,max(res$NLP)+(max(res$NLP)/5))+
 			coord_flip()+
 			theme_minimal()+
 			xlab("Combinatorial TF")+
