@@ -1,0 +1,8 @@
+library(data.table)
+
+db<-fread("human.csv",sep=",")
+## two columns table
+genesplit<-split(db$gene1,db$gene2)
+
+save(genesplit,file="genesplit.rda")
+## put it in data folder of the package
