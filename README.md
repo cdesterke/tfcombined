@@ -1,4 +1,4 @@
-# tfcombined
+# **************TFCOMBINED**************
 
 
 R package to perform a combinatorial human transcription factor network enrichment starting from a human gene list obtained for example by omics experiment.
