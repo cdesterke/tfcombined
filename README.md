@@ -50,7 +50,40 @@ plotnlp(res)
 ![nlp](https://github.com/cdesterke/tfcombined/blob/main/nlp.png)
 
 
-## network of enriched
-default parameters
+## network of enriched combinatorial transcription factors
 
+
+### custom the network with some parameters
+
+- cex parameter: change size of the vertex (nodes) label
+
+- distance parameter: change the distance between the vertex and its label
+
+- layout parameter: change the design of the network and have several options such as: (layout_as_star, layout_components, layout_in_circle, layout_nicely,layout_on_grid,
+layout_on_sphere, layout_randomly, layout_with_dh, layout_with_drl, layout_with_fr, layout_with_gem,
+layout_with_graphopt, layout_with_kk, layout_with_lgl, layout_with_mds)
+
+output with nicely layout
+
+```r
+tfcrnet(custom,res,layout=layout_nicely,cex=1,distance=1.5)
+
+```
+![nicely](https://github.com/cdesterke/tfcombined/blob/main/netnicely.png)
+
+output with star layout
+
+```r
+tfcrnet(custom,res,layout=layout_as_star,cex=1,distance=1.5)
+
+```
+![star](https://github.com/cdesterke/tfcombined/blob/main/netstar.png)
+
+
+
+
+# REFERENCES
+
+> Timothy Ravasi 1, Harukazu Suzuki, Carlo Vittorio Cannistraci, Shintaro Katayama, Vladimir B Bajic, Kai Tan, Altuna Akalin, Sebastian Schmeier, Mutsumi Kanamori-Katayama, Nicolas Bertin, Piero Carninci, Carsten O Daub, Alistair R R Forrest, Julian Gough, Sean Grimmond, Jung-Hoon Han, Takehiro Hashimoto, Winston Hide, Oliver Hofmann, Atanas Kamburov, Mandeep Kaur, Hideya Kawaji, Atsutaka Kubosaki, Timo Lassmann, Erik van Nimwegen, Cameron Ross MacPherson, Chihiro Ogawa, Aleksandar Radovanovic, Ariel Schwartz, Rohan D Teasdale, Jesper Tegnér, Boris Lenhard, Sarah A Teichmann, Takahiro Arakawa, Noriko Ninomiya, Kayoko Murakami, Michihira Tagami, Shiro Fukuda, Kengo Imamura, Chikatoshi Kai, Ryoko Ishihara, Yayoi Kitazume, Jun Kawai, David A Hume, Trey Ideker, Yoshihide Hayashizaki:Cell
+. 2010 Mar 5;140(5):744-52. doi: 10.1016/j.cell.2010.01.044.,An atlas of combinatorial transcriptional regulation in mouse and man (PMID: 20211142)
 
