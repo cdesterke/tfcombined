@@ -1,10 +1,10 @@
 # **************TFCOMBINED**************
 
 
-"tfcombined" is a R package allowing to build a combinatorial human transcription factor network enrichment starting from a human gene list obtained for example by omics experiment.
+"tfcombined" is a R package allowing to build a combinatorial human transcription factor network eniched from a human gene list obtained by omics experiment.
 
 ### Synopsis
-Combinatorial interactions among transcription factors are critical to directing tissue-specific gene expression [(Ravasi T. 2010)](https://pubmed.ncbi.nlm.nih.gov/20211142/). Tissue specificty is enabled by spatial and temporal patterns of gene expression which in turn are driven by transcriptional regulatory networks [(Naef and Huelsken 2005; Zhang 2004)](https://pubmed.ncbi.nlm.nih.gov/16030348/). Transcription factors do not act independently but form complexes with other transcription factors, chromatin modifiers and cofactor proteins, which bind together and assemble upon the regulatory regions of DNA to affect transcription (Fedorova and Zink 2008). It has been estimated that approximatively 75 percent of metazoan transcription factors could heterodimerize with other factors (Walhout 2006). It is important to understand which combination of transcription factors act together and how these combinations lead to modes of regulation that are not evident when each factor is considerate separately [(Ravasi T. 2010)](https://pubmed.ncbi.nlm.nih.gov/20211142/).  
+Combinatorial interactions among transcription factors are critical to directing tissue-specific gene expression [(Ravasi T. 2010)](https://pubmed.ncbi.nlm.nih.gov/20211142/). Tissue specificty is enabled by spatial and temporal patterns of gene expression which in turn are driven by transcriptional regulatory networks [(Naef and Huelsken 2005; Zhang 2004)](https://pubmed.ncbi.nlm.nih.gov/16030348/). Transcription factors do not act independently but form complexes with other transcription factors, chromatin modifiers and cofactor proteins, which bind together and assemble upon the regulatory regions of DNA to affect transcription [(Fedorova and Zink 2008)](https://pubmed.ncbi.nlm.nih.gov/18718493/). It has been estimated that approximatively 75 percent of metazoan transcription factors could heterodimerize with other factors [(Walhout 2006)](https://pubmed.ncbi.nlm.nih.gov/17053092/). It is important to understand which combination of transcription factors act together and how these combinations lead to modes of regulation that are not evident when each factor is considerate separately [(Ravasi T. 2010)](https://pubmed.ncbi.nlm.nih.gov/20211142/).  
 
 ### Package installation
 ```r
@@ -92,7 +92,9 @@ tfcrnet(custom,res,layout=layout_as_star,cex=1,distance=1.5)
 
 > Felix Naef, Joerg Huelsken: Nucleic Acids Res. 2005 Jul 19;33(13):e111. doi: 10.1093/nar/gni104., Cell-type-specific transcriptomics in chimeric models using transcriptome-based masks (PMID: 16030348)
 
-> 
+> Elena Fedorova 1, Daniele Zink: Biochim Biophys Acta. 2008 Nov;1783(11):2174-84. doi: 10.1016/j.bbamcr.2008.07.018, Nuclear architecture and gene regulation (PMID: 18718493)
+
+> Albertha J M Walhout: Genome Res. 2006 Dec;16(12):1445-54. doi: 10.1101/gr.5321506. Epub 2006 Oct 19., Unraveling transcription regulatory networks by protein-DNA and protein-protein interaction mapping (PMID: 17053092)
 
 
 ## complete use case
