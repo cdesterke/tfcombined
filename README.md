@@ -4,7 +4,7 @@
 "tfcombined" is a R package allowing to build a combinatorial human transcription factor network enrichment starting from a human gene list obtained for example by omics experiment.
 
 ### Synopsis
-Combinatorial interactions among transcription factors are critical to directing tissue-specific gene expression [(Ravasi T. 2010)](https://pubmed.ncbi.nlm.nih.gov/20211142/). Tissue specificty is enabled by spatial and temporal patterns of gene expression which in turn are driven by transcriptional regulatory networks [(Naef and Huelsken 2005; Zhang 2004)](https://pubmed.ncbi.nlm.nih.gov/16030348/). Transcription factors do not act independently but form complexes with other transcription factors, chromatin modifiers and cofactor proteins, which bind together and assemble upon the regulatory regions of DNA to affect transcription (Fedorova and Zink 2008). It has been estimated that approximatively 75 percent of metazoan transcription factors could heterodimerize with other factors (Walhout 2006). It is important to understand which combination of transcription factors act together and how these combinations lead to modes of regulation that are not evident when each factor is considerate separately (Ravasi T. 2010).  
+Combinatorial interactions among transcription factors are critical to directing tissue-specific gene expression [(Ravasi T. 2010)](https://pubmed.ncbi.nlm.nih.gov/20211142/). Tissue specificty is enabled by spatial and temporal patterns of gene expression which in turn are driven by transcriptional regulatory networks [(Naef and Huelsken 2005; Zhang 2004)](https://pubmed.ncbi.nlm.nih.gov/16030348/). Transcription factors do not act independently but form complexes with other transcription factors, chromatin modifiers and cofactor proteins, which bind together and assemble upon the regulatory regions of DNA to affect transcription (Fedorova and Zink 2008). It has been estimated that approximatively 75 percent of metazoan transcription factors could heterodimerize with other factors (Walhout 2006). It is important to understand which combination of transcription factors act together and how these combinations lead to modes of regulation that are not evident when each factor is considerate separately [(Ravasi T. 2010)](https://pubmed.ncbi.nlm.nih.gov/20211142/).  
 
 ### Package installation
 ```r
@@ -16,7 +16,7 @@ install_github("cdesterke/tfcombined")
 
 Starting from an imput human gene list obtained by omics experiments this tfcombined package allows to perform a combinatorial transcription factor enrichment.
 
-- In a first step compare your input genelist to human TF-TF interaction database (Ravasi Timothy 2010). This initial step of enrichment performs with "tfcrcalc" function allows to output a result table with significance of enrichments. 
+- In a first step compare your input genelist to human TF-TF interaction database [(Ravasi Timothy 2010)](https://pubmed.ncbi.nlm.nih.gov/20211142/). This initial step of enrichment performs with "tfcrcalc" function allows to output a result table with significance of enrichments. 
 
 - In second step you could output your enrichment results in barplot for "enrichment scores with "plotes" function and for negative log10 p-values with "plotnlp" function. 
 
