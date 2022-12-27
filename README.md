@@ -90,6 +90,11 @@ tfcrnet(custom,res,layout=layout_as_star,cex=1,distance=1.5)
 > Timothy Ravasi, Harukazu Suzuki, Carlo Vittorio Cannistraci, Shintaro Katayama, Vladimir B Bajic, Kai Tan, Altuna Akalin, Sebastian Schmeier, Mutsumi Kanamori-Katayama, Nicolas Bertin, Piero Carninci, Carsten O Daub, Alistair R R Forrest, Julian Gough, Sean Grimmond, Jung-Hoon Han, Takehiro Hashimoto, Winston Hide, Oliver Hofmann, Atanas Kamburov, Mandeep Kaur, Hideya Kawaji, Atsutaka Kubosaki, Timo Lassmann, Erik van Nimwegen, Cameron Ross MacPherson, Chihiro Ogawa, Aleksandar Radovanovic, Ariel Schwartz, Rohan D Teasdale, Jesper Tegnér, Boris Lenhard, Sarah A Teichmann, Takahiro Arakawa, Noriko Ninomiya, Kayoko Murakami, Michihira Tagami, Shiro Fukuda, Kengo Imamura, Chikatoshi Kai, Ryoko Ishihara, Yayoi Kitazume, Jun Kawai, David A Hume, Trey Ideker, Yoshihide Hayashizaki: Cell
 . 2010 Mar 5;140(5):744-52. doi: 10.1016/j.cell.2010.01.044., An atlas of combinatorial transcriptional regulation in mouse and man (PMID: 20211142)
 
+> Felix Naef, Joerg Huelsken: Nucleic Acids Res. 2005 Jul 19;33(13):e111. doi: 10.1093/nar/gni104., Cell-type-specific transcriptomics in chimeric models using transcriptome-based masks (PMID: 16030348)
+
+> 
+
+
 ## complete use case
 
 ```r
