@@ -1,7 +1,7 @@
 # **************TFCOMBINED**************
 
 
-"tfcombined" is a R package allowing to build a combinatorial human transcription factor network eniched from a human gene list obtained by omics experiment.
+"tfcombined" is a R package allowing to build a human combinatorial transcription factor network enriched from a human gene list obtained by omics experiment.
 
 ### Synopsis
 Combinatorial interactions among transcription factors are critical to directing tissue-specific gene expression [(Ravasi T. 2010)](https://pubmed.ncbi.nlm.nih.gov/20211142/). Tissue specificty is enabled by spatial and temporal patterns of gene expression which in turn are driven by transcriptional regulatory networks [(Naef and Huelsken 2005; Zhang 2004)](https://pubmed.ncbi.nlm.nih.gov/16030348/). Transcription factors do not act independently but form complexes with other transcription factors, chromatin modifiers and cofactor proteins, which bind together and assemble upon the regulatory regions of DNA to affect transcription [(Fedorova and Zink 2008)](https://pubmed.ncbi.nlm.nih.gov/18718493/). It has been estimated that approximatively 75 percent of metazoan transcription factors could heterodimerize with other factors [(Walhout 2006)](https://pubmed.ncbi.nlm.nih.gov/17053092/). It is important to understand which combination of transcription factors act together and how these combinations lead to modes of regulation that are not evident when each factor is considerate separately [(Ravasi T. 2010)](https://pubmed.ncbi.nlm.nih.gov/20211142/).  
