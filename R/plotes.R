@@ -24,7 +24,6 @@ plotes<-function(res){
 
 		## perform the barplot
 		p=ggplot(data=res,aes(x=reorder(family,ES),y=ES,fill=family))+geom_bar(stat="identity")+
-			ylim(0,max(res$ES)+(max(res$ES)/5))+
 			coord_flip()+
 			theme_minimal()+
 			xlab("Combinatorial TF")+
