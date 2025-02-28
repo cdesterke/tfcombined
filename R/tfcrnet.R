@@ -66,7 +66,7 @@ tfcrnet<-function(custom,res,layout=layout_as_star,cex=1,distance=2){
 
 
 	## prepare results data for network analysis
-	final%>%select(family,gene,NLP,significance)->new
+	final%>%dplyr::select(family,gene,NLP,significance)->new
 	colnames(new)<-c("from","to","weight","significance")
 
 	## replace significance data by distinct color for edges
